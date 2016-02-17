@@ -1,0 +1,19 @@
+{
+  "name": "devoweler.js",
+  "version": "1.0.0",
+  "description": "Remove the vowels, keep it meta.",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kjbrum/devoweler.js.git"
+  },
+  "author": "Kyle Brumm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kjbrum/devoweler.js/issues"
+  },
+  "homepage": "https://github.com/kjbrum/devoweler.js#readme",
+  "devDependencies": {
+  }
+}
