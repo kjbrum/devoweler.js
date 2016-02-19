@@ -1,0 +1,14 @@
+// Footer
+
+.footer {
+    height: $footer-height;
+    text-align: center;
+    font-size: 0.8rem;
+    background: $primary;
+    color: $secondary;
+
+    a {
+        color: $secondary;
+        font-weight: bold;
+    }
+}

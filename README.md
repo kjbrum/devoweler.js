@@ -1,11 +1,9 @@
-# Devoweler.js
+# Devoweler.js Website
 
 > Remove the vowels, keep it meta.
 
 
-## Demo
-
-http://kylebrumm.com/devoweler.js/
+## To-Do
 
 
 ## License

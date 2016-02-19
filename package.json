@@ -3,6 +3,15 @@
   "version": "1.0.0",
   "description": "Remove the vowels, keep it meta.",
   "scripts": {
+    "browsersync": "browser-sync start --server --files 'css/style.css, js, **/*.html'",
+    "build": "npm run css:build",
+    "css": "npm run css:watch",
+    "css:autoprefix": "postcss --use autoprefixer --output style.css style.css",
+    "css:build": "npm run css:compile && npm run css:autoprefix",
+    "css:compile": "node-sass --output-style compressed scss/style.scss css/style.css",
+    "css:watch": "watch 'npm run css:build' scss",
+    "dev": "parallelshell 'npm run watch' 'npm run browsersync'",
+    "watch": "npm run css"
   },
   "repository": {
     "type": "git",
@@ -15,5 +24,10 @@
   },
   "homepage": "https://github.com/kjbrum/devoweler.js#readme",
   "devDependencies": {
+    "autoprefixer": "latest",
+    "node-sass": "latest",
+    "parallelshell": "latest",
+    "postcss-cli": "latest",
+    "watch": "latest"
   }
 }

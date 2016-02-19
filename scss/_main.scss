@@ -1,0 +1,152 @@
+// Main
+
+html,
+body {
+    height: 100%;
+    background: $secondary;
+}
+
+body {
+	font: 100%/1.5 $font;
+	-webkit-text-size-adjust: 100%;
+	color: $primary;
+    min-width: $min-width;
+}
+
+.content {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+}
+
+.content:after {
+    content: "";
+    display: block;
+    height: $footer-height;
+}
+
+a {
+    text-decoration: none;
+    color: $primary;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $primary-light;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    margin: 1.25rem auto;
+    height: 1px;
+    background: $primary;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+::selection {
+    background: $white;
+    color: $secondary;
+}
+
+::-moz-selection {
+    background: $white;
+    color: $secondary;
+}
+
+.social-share {
+    font-size: 4rem;
+    line-height: 0;
+
+    @media all and (min-width: $bp-xs) {
+        font-size: 6rem;
+    }
+
+    li {
+        display: inline-block;
+        transform: translateY(0);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+// Pre/Code
+
+code,
+pre,
+xmp {
+    color: $white;
+    background: $secondary-light;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin: 0;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
+    .comment {
+        color: #8C93A0;
+    }
+}
+
+pre,
+:not(pre) > xmp {
+    padding: 1rem;
+    margin: 0.5rem 0;
+    overflow: auto;
+}
+
+:not(pre) > code {
+    padding: 0.1rem;
+    white-space: normal;
+}
+
+// Sections
+.section {
+
+}
+
+.section--hero {
+    padding: 3rem 2rem 2rem;
+
+    // @media all and (min-width: $bp-s) {
+    //     padding: 3rem 0 2rem;
+    // }
+
+    @media all and (min-width: $bp-m) {
+        padding: 6rem 1rem 5rem;
+    }
+}
+
+.section--share {
+    text-align: center;
+    padding-bottom: 2rem;
+}
